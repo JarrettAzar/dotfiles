@@ -16,3 +16,5 @@ Pretty Version with time polybar on-screen
 
 In-Use version
 ![example3](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-09-135915_2560x1080_scrot.png)
+
+##### You can head to the examples folder for examples of older workspaces!
