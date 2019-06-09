@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=polybar
+Type=Application
+Exec="/home/jarrett/.config/polybar/launch.sh"
+X-GNOME-Autostart-enabled=true
