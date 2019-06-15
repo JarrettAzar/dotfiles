@@ -28,7 +28,7 @@ hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn ${TERMINAL:-kitty} # use your $TERMINAL with xterm as fallback
 
 #rofi
-hc keybind $Mod-d spawn rofi -show run -location 0 -lines 5 -bw 0 -columns 2
+hc keybind $Mod-d spawn rofi -show run -location 0 -lines 5 -bw 0 -columns 1
 
 #scrot
 hc keybind $Mod-Shift-s spawn scrot
