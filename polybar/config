@@ -27,109 +27,89 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/main]
+[bar/bar1]
 monitor = ${env:MONITOR:HDMI-0}
-width = 0%: +675
-height = 150
-offset-y = 465
-offset-x = 943
+width = 0%: +110
+height = 14
+offset-y = 5
+offset-x = 1225
 radius = 0.0
-fixed-center = true
+fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0
-line-color = #f00
-
-border-size = 3
+border-size = 1
 border-color = #FFEBC3
 
-padding-left = 1
-padding-right = 1
+padding-left = 0
+padding-right = 0
 
-module-margin-left = 1
+module-margin-left = 0
 module-margin-right = 1
 
-font-0 = SF-Pro:pixelsize=36;1
+font-0 = Tamsyn:pixelsize=12;2
 
-modules-left =
-modules-center = date day pi
-modules-right =
+modules-center = date day
 
-cursor-click = pointer
-cursor-scroll = ns-resizefile:///home/jarrett/Documents/tab-master/index.html
+[bar/bar2]
+monitor = ${env:MONITOR:HDMI-0}
+width = 0%: +60
+height = 14
+offset-y = 5
+offset-x = 15
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-size = 1
+border-color = #FFEBC3
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 1
+
+
+Use thispgrep procname > /dev/null && echo Running to avoid pgrep outputting the PID – Kostanos Aug 6 '13 at 19:27
+font-0 = Tamsyn:pixelsize=12;2
+
+modules-center = pi
+
+[bar/bar3]
+monitor = ${env:MONITOR:HDMI-0}
+width = 0%: +215
+height = 14
+offset-y = 5
+offset-x = 2330
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-size = 1
+border-color = #FFEBC3
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 1
+
+font-0 = Tamsyn:pixelsize=12;2
+
+modules-center = spotify noplay
 
 [module/spotify]
 type = custom/script
 interval = 1
 format = <label>
-exec = python /home/jarrett/polybar-scripts/spotscript.py -f '{artist}: {song}'
+exec = python /home/jarrett/polybar-scripts/spotscript.py -f '{artist}: {song}' -t 10
 format-underline = #1db954
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = "CPU: "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #de591d
-label = %percentage:2%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = "RAM: "file:///home/jarrett/Documents/tab-master/index.html
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #de591d
-label = %percentage_used%%
-
-[module/wlan]
-type = internal/network
-interface = 
-interval = 3.0
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-label-connected = %essid%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
-
-[module/eth]
-type = internal/network
-interface = 
-interval = 3.0
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "file:///home/jarrett/Documents/tab-master/index.html
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date
@@ -138,7 +118,7 @@ interval = 1
 date =
 date-alt = " %Y-%m-%d"
 
-time = %I:%M%p
+time = %I:%M
 time-alt = %H:%M:%S
 
 ;format-prefix = 
@@ -146,55 +126,6 @@ time-alt = %H:%M:%S
 ;format-underline = #de591d
 
 label = %date% %time%
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 175
-
-format = <ramp> <label>
-format-underline = #000000
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature-f%
-label-warn = %temperature-f%
-label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
-
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-format-underline = #de591d
-
-label-open = "power"
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [module/pi]
 type = custom/script
@@ -206,10 +137,16 @@ format = <label>
 
 exec = /home/jarrett/polybar-scripts/rpiPing.sh
 
+[module/noplay]
+type = custom/script
+interval = 1
+exec = /home/jarrett/spotbash.sh spotify
+
 [module/day]
 type = custom/script
 interval = 43200
 exec = /home/jarrett/polybar-scripts/dayofyear.sh
+
 
 [settings]
 screenchange-reload = true
