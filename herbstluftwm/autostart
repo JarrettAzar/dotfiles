@@ -177,8 +177,8 @@ hc unlock
 # hc detect_monitors
 
 # find the panel
-panel=
-https://duckduckgo.com/?q=slack+on+linux&t=canonical&ia=web[ -x "$panel" ] || panel=
+panel=~/.config/polybar/launch.sh
+https://duckduckgo.com/?q=slack+on+linux&t=canonical&ia=web[ -x "$panel" ] || panel=~/.config/polybar/launch.sh
 for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
     # start it on each monitor
     "$panel" $monitor &
