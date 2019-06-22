@@ -9,9 +9,6 @@ hc() {
 hc emit_hook reload
 
 #autostart
-hc spawn polybar bar1
-hc spawn polybar bar2
-hc spawn polybar bar3
 hc spawn compton
 hc spawn /home/jarrett/wall.sh
 
