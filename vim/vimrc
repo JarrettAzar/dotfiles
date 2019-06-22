@@ -28,7 +28,6 @@ let g:lightline.colorscheme = 'forest_night'
 
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
-autocmd FileType apache setlocal commentstring=#\ %s
 
 colorscheme forest-night
 set termguicolors
