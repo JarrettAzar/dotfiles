@@ -8,11 +8,12 @@ hc() {
 
 hc emit_hook reload
 
-
 #autostart
+hc spawn polybar bar1
+hc spawn polybar bar2
+hc spawn polybar bar3
 hc spawn compton
 hc spawn /home/jarrett/wall.sh
-hc spawn /home/jarrett/herbwindowfix.sh
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -117,10 +118,6 @@ hc keybind $Mod-Shift-Tab   cycle_all -1
 hc keybind $Mod-c cycle
 hc keybind $Mod-i jumpto urgent
 
-#polybars
-hc keybind $Mod-t spawn polybar main
-hc keybind $Mod-Shift-t spawn pkill polybar
-
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
@@ -154,9 +151,9 @@ hc set smart_frame_surroundings 1
 hc set mouse_recenter_gap 0
 
 #gap_management
-hc set window_gap 8
-hc pad 0 10 10 10 10
-hc pad 1 10 10 10 10
+hc set window_gap 5
+hc pad 0 20 10 10 10
+hc pad 1 15 15 15 15
 
 # rules
 hc unrule -F
@@ -180,7 +177,7 @@ hc unlock
 # hc detect_monitors
 
 # find the panel
-panel=~/.config/herbstluftwm/panel.sh
+panel=
 https://duckduckgo.com/?q=slack+on+linux&t=canonical&ia=web[ -x "$panel" ] || panel=
 for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
     # start it on each monitor
