@@ -17,4 +17,4 @@ Please take what you like, and suggest anything that you think would look better
 ##### Current Wallpaper
 ![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall-possible-6.jpg)
 
-##### You can head to the examples folder for examples of older workspaces!
+##### You can head to the examples folder for examples of older workspaces/ideas!
