@@ -9,12 +9,12 @@ Please take what you like, and suggest anything that you think would look better
 #### Here are some examples of my current Workspace
 
 ##### Pretty Version
-![example1](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-22-133408_2560x1080_scrot.png)
+![example1](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-23-222703_2560x1080_scrot.png)
 
 ##### In-Use version
-![example3](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-22-132701_2560x1080_scrot.png)
+![example3](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-23-231527_2560x1080_scrot.png)
 
 ##### Current Wallpaper
-![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall-possible-6.jpg)
+![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall8.jpg)
 
 ##### You can head to the examples folder for examples of older workspaces/ideas!
