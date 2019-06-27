@@ -17,4 +17,10 @@ Please take what you like, and suggest anything that you think would look better
 ##### Current Wallpaper
 ![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall8.jpg)
 
+##### Tools I've created or worked on!
+1. ![Tea Time](https://github.com/JarrettAzar/teatime)
+  > A small steep timer for polybar
+2. ![Forest Night Colorscheme](https://github.com/sainnhe/vim-color-forest-night)
+  > An awesome vim colorscheme that I was able to port to iTerm2
+
 ##### You can head to the examples folder for examples of older workspaces/ideas!
