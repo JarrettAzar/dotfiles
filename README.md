@@ -11,7 +11,7 @@ Please take what you like, and suggest anything that you think would look better
 ![example1](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-07-04-233038_2560x1080_scrot.png)
 
 ##### Current Wallpaper
-![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall8.jpg)
+![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall14.png)
 
 ##### Tools I've created or worked on!
 1. [teatime](https://github.com/JarrettAzar/teatime)
