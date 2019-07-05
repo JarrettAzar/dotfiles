@@ -6,13 +6,9 @@ Please take what you like, and suggest anything that you think would look better
 
 *WARNING: Copying entire configs is almost never a good idea, and usually leads to broken things*
 
-#### Here are some examples of my current Workspace
+#### Here is my current Workspace
 
-##### Pretty Version
-![example1](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-23-222703_2560x1080_scrot.png)
-
-##### In-Use version
-![example3](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-06-23-231527_2560x1080_scrot.png)
+![example1](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/examples/2019-07-04-233038_2560x1080_scrot.png)
 
 ##### Current Wallpaper
 ![wallpaper](https://raw.githubusercontent.com/JarrettAzar/dotfiles/master/Wallpapers/wall8.jpg)
